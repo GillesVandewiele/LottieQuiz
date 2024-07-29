@@ -58,13 +58,13 @@ def main():
                 st.session_state.user_answers[current_question] = user_answer
                 print(st.session_state.user_answers)
                 st.session_state.current_question -= 1
-                st.experimental_rerun()
+                st.rerun()
         with col2:
             if st.button(next_string):
                 st.session_state.user_answers[current_question] = user_answer
                 print(st.session_state.user_answers)
                 st.session_state.current_question += 1
-                st.experimental_rerun()
+                st.rerun()
 
 
     else:
